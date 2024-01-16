@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #1d1c1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+}
+
+.card {
+    width: 200px;
+    padding: 20px;
+    margin: 0 20px;
+    position: relative;
+    background-color: rgb(245, 85, 125);
+    box-shadow: 0 1px 14px rgba(255, 255, 255, 0.103);
+    border-radius: 5px;
+    color: orange;
+    animation: float 2.5s ease-in-out 0s infinite forwards;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: black;
+    clip-path: circle(15% at 0px 0px);
+    text-align: center;
+    color: rgb(245, 85, 125);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.text {
+    margin-top: 30px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.view-btn {
+    width: 150px;
+    padding: 10px 20px;
+    border: 1px solid rgb(245, 85, 125);
+    background-color: black;
+    color: rgb(245, 85, 125);
+    border-radius: 55px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.view-btn:hover {
+    border: 1px solid rgb(245, 85, 125);
+    background-color: rgb(245, 85, 125);
+    color: black;
+}
+
+.card:hover .cover {
+    clip-path: circle(75%);
+}
